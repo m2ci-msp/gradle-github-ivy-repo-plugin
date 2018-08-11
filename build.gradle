@@ -1,2 +1,16 @@
+plugins {
+    id 'java-gradle-plugin'
+    id 'groovy'
+}
+
 group 'org.m2ci.msp'
 version '0.1-SNAPSHOT'
+
+gradlePlugin {
+    plugins {
+        githubIvyRepoPlugin {
+            id = 'org.m2ci.msp.github-ivy-repo'
+            implementationClass = 'org.m2ci.msp.github.GithubIvyRepoPlugin'
+        }
+    }
+}
