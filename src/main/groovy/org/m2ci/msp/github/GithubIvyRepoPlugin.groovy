@@ -11,6 +11,10 @@ class GithubIvyRepoPlugin implements Plugin<Project> {
             delegate.ivy {
                 name "github/$user"
                 url "https://github.com/$user"
+                layout 'pattern', {
+                    artifact '[module]/releases/download/v[revision]/[artifact]-[revision](-[classifier]).[ext]'
+                    ivy '[module]/releases/download/v[revision]/ivy(-[revision]).xml'
+                }
             }
         }
     }
