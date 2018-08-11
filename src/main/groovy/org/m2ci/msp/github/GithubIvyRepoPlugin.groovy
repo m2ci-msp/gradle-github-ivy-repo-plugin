@@ -7,5 +7,11 @@ class GithubIvyRepoPlugin implements Plugin<Project> {
 
     @Override
     void apply(Project project) {
+        project.repositories.metaClass.github { user ->
+            delegate.ivy {
+                name "github/$user"
+                url "https://github.com/$user"
+            }
+        }
     }
 }
