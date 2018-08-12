@@ -8,6 +8,8 @@ Easily resolve GitHub release assets as dependencies in Gradle
 Usage
 -----
 
+See [here](https://plugins.gradle.org/plugin/org.m2ci.msp.github-ivy-repo) how to apply this plugin.
+
 GitHub release assets can be resolved and cached as dependencies by adding an Ivy repository with a custom [pattern layout].
 This plugin adds a new `github(USER)` method to a Gradle project's `repositories` block so that this can work with minimal overhead.
 
