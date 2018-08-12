@@ -32,7 +32,7 @@ dependencies {
     data group: 'io.github.foo', name: 'bar', version: '1.0'
 }
 ```
-(The `group` is mainly relevant for local caching.)
+The `group` must match the `organisation` in the Ivy descriptor.
 
 [pattern layout]: https://docs.gradle.org/4.9/userguide/repository_types.html#sec:defining_custom_pattern_layout_for_an_ivy_repository
 [release]: https://help.github.com/articles/about-releases/
