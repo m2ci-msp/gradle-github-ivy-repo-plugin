@@ -5,6 +5,7 @@ plugins {
 
 group 'org.m2ci.msp'
 version '0.1-SNAPSHOT'
+description 'Easily resolve GitHub release assets as dependencies in Gradle'
 
 gradlePlugin {
     plugins {
