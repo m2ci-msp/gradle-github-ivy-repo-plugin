@@ -6,6 +6,7 @@ Gradle GitHub Ivy Repo Plugin
 
 ### Changed
 
+- transitively apply base plugin
 - [all changes since v0.1]
 
 [v0.1] -- 2018-08-12
