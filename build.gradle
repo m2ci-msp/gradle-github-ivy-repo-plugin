@@ -30,7 +30,7 @@ test {
 }
 
 pluginBundle {
-    def url = 'https://github.com/psibre/gradle-github-ivy-repo-plugin'
+    def url = 'https://github.com/m2ci-msp/gradle-github-ivy-repo-plugin'
     website = url
     vcsUrl = url
     description = project.description
