@@ -57,7 +57,6 @@ class GithubIvyRepoPluginTest {
         def projectDir = File.createTempDir()
         new File(projectDir, 'build.gradle').withWriter { buildScript ->
             buildScript << """|plugins {
-                              |    id 'base'
                               |    id 'org.m2ci.msp.github-ivy-repo'
                               |}
                               |
